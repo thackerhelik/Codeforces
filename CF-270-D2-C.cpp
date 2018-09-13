@@ -42,8 +42,9 @@ int main(){
    	for(ll i = 1; i < n; ++i){
    		ll diff = 2LL * (v[i].fi - v[i - 1].fi);
    		ll prev = v[i - 1].se;
+		if(diff >= 15)continue;
    		ll capacity = v[i].se * 1LL * (1LL << (diff));
-   		if(prev <= capacity || diff >= 15)continue;
+   		if(prev <= capacity)continue;
    		prev -= capacity;
    		v[i].se += ( (prev + (1LL << diff) - 1) / (1LL << diff) );
    	}
