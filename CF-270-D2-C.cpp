@@ -1,7 +1,6 @@
-/*input
-2
-0 10000
-1 1
+/*
+take care that if gap exceeds 15 we can fit all previous anyway because 4^15 > 1e9
+Fit as many as possible into the new and the remaining convert to big box size
 */
 
 #include <bits/stdc++.h>
