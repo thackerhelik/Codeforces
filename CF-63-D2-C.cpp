@@ -1,8 +1,8 @@
 /*
-try all 4 digit numbers and go through all the guesses
+try all 3 and 4 digit numbers and go through all the guesses
 if only 1 number gives all the guesses correct that is the answer
-else we have 2 cases ... no number satisfies --> data insufficient
-                     ... more than 1 --> incorrect data
+else we have 2 cases ... no number satisfies --> data incorrect
+                     ... more than 1 --> more data
 */
 
 
