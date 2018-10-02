@@ -45,7 +45,6 @@ void insert(struct trie *root, int key){
 			if(!crawl->left){
 				crawl->left = getNode();
 			}
-			// cout << crawl->count << endl;
 			crawl = crawl->left;
 			crawl->count++;
 		}
@@ -73,8 +72,6 @@ int mex(struct trie *root, int xo){
 	struct trie *crawl = root;
 	string s = "000000000000000000000";
 	for(int i = 20; i >= 0; --i){
-
-		//cout << i << " " << (xo & (1 << i)) << " " << crawl->left->count << " " << crawl->right->count << endl;
 
 		if(xo & (1 << i)){
 			if(crawl->right->count >= (1 << (i))){
