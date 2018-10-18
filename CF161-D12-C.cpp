@@ -18,7 +18,7 @@ using namespace std;
 
 
 int solve(int l1, int r1, int l2, int r2, int k){
-;
+
 	if(k == 0) return 1;
 	
 	int mid = (1 << (k-1));
@@ -48,10 +48,8 @@ int solve(int l1, int r1, int l2, int r2, int k){
 }
 
 int main(){
-    #if ONLINE_JUDGE
-        ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL);
-	#endif
-
+    ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL);
+	
     int l1, l2, r1, r2;
     cin >> l1 >> r1 >> l2 >> r2;
 
