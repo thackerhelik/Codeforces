@@ -1,5 +1,16 @@
 /*
+Let us first convert the problem from a circular one to a straight line.
+So first find the maximum value in the array. (if multiple anyone)
+and rotate the array around that point. Add the max value to the end so that it becomes circular.
+Now consider any hill i.
+We find 3 values l[i], r[i] and c[i]
+l[i] -> index of the first hill to the left  of i such that height[l[i]] > height[i]
+r[i] -> index of the first hill to the right of i such that height[r[i]] > height[i]
+c[i] -> number of hills x between i and r[i] such that height[i] == height[x]
 
+now for every node we add c[i] to answer
+then we add (l[i], x) and (x, r[i]) only care to be taken is l[i] = 0 and r[i] = n which means
+they are same element so we subtract 1 from answer
 */
 #include <bits/stdc++.h>
 using namespace std;
