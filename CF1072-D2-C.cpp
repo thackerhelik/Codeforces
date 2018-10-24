@@ -1,5 +1,8 @@
 /*
-
+let sum = a + b
+we have to distribute it into 2 sets such that sumA <= a and sumB <= b
+Greedily distribute. 
+Todo for me: Prove the greedy
 */
 #include <bits/stdc++.h>
 
