@@ -1,5 +1,7 @@
 /*
-
+find the indices with l[idx] = 0 and r[idx] = 0 
+this is the maximum. assign all such indices with max possible.
+then adjust the others accordingly
 */
 #include <bits/stdc++.h>
 
