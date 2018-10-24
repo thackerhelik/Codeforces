@@ -1,5 +1,9 @@
 /*
+first we change the character array by using dp
+for a cell x,y we can either come from x-1,y or x,y-1 (if some not valid skip)
+if k > 0 for any then we can replace the current x,y cell to a if it is not a and make k - 1
 
+then when we have array we can do bfs from start to get the lexicographically smallest string
 */
 #include <bits/stdc++.h>
 using namespace std;
