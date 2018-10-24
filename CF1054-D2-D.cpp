@@ -1,6 +1,10 @@
-/*input
-6 3
-1 4 4 7 3 4
+/*
+greedy algorithm works
+build a prefix xor array P
+have a map F which stores how many times a value has been seen
+answer without complement allowed is n*(n+1)/2 - summation x : F[x]*(F[x]-1)/2 (for x = 0 we have ((F[0]+1)*(F[0]+1-1))/2)
+now since a^2 + b^2 + c^2 + ... <= (a + b + c + ...)^2 greedy algorithm will give correct answer
+for every value see if complement has less value then swap
 */
 #include <bits/stdc++.h>
 
